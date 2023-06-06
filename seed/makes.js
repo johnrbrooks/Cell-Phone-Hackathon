@@ -1,9 +1,10 @@
 const db = require('../db')
-const { Make } = require('../models')
+const { Make, Platform } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
+    const platforms = await Platform.find({})
     const makes = [
         {
             name:'Apple',
