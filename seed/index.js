@@ -1,10 +1,8 @@
+
 const db = require('../db')
 const { Phones } = require('../models')
 
 // Connect to the database
-db.on('error', console.error.bind(console, 'MongoDB connection error:'))
-
-const main = async () => {
 
 
     const phones = [
@@ -33,6 +31,3 @@ const main = async () => {
 const run = async () => {
     await main()
     db.close()
-}
-
-run()
