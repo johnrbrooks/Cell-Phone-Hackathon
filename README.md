@@ -1,5 +1,8 @@
 # Cell-Phone-Hackathon
 
+# FIGMA ERD
+[Figma ERD](https://www.figma.com/file/s6l3H5archAJB5sohCyzUd/Cell-Phone-Hackathon?type=whiteboard&node-id=0%3A1&t=d2IDmtFsCW3UWIgf-1)
+
 ![Hackathon](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.usdigitalpartners.com%2Fwp-content%2Fuploads%2Fhackathon.gif&f=1&nofb=1)
 
 ## Overview
