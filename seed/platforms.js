@@ -8,8 +8,12 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
 
     const platforms = [
        { platform: 'iOS',
-         platform_id: appleOS[0]._id
+         platform_id: platforms[0]._id
        },
+       {
+        platform: 'Android',
+        platform_id: platforms[0]._id
+       }
     ]
 
     await Platform.insertMany(platforms)
