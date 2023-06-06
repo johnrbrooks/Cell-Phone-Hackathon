@@ -19,4 +19,4 @@ const phoneSchema = new Schema(
     }
 )
 
-Module.exports = phoneSchema
+module.exports = phoneSchema
