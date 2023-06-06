@@ -1,19 +1,18 @@
-const Phone = require('..models/phone')
+const Platform = require('..models/platform')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
 
 const appleOS = await Platform.find({ platform_name:  'iOS'})
-const androidOS = await Platform.find({ platform_name: 'Android'})
 
     const platforms = [
        { platform: 'iOS',
-         platform_id: appleOS[0]._id
+         platform_id: platforms[0]._id
        },
        {
         platform: 'Android',
-        platform_id: androidOS[0]._id
+        platform_id: platforms[0]._id
        }
     ]
 
