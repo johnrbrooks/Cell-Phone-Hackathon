@@ -18,10 +18,6 @@ const main = async () => {
             name:'Samsung',
             platform_id: platforms[0]._id
         },
-        {
-            name:'LG',
-            platform_id: platforms[0]._id
-        },
     ]
     await Make.deleteMany()
     await Make.insertMany(makes)
