@@ -1,11 +1,10 @@
 const db = require('../db')
-const { Phones } = require('../models')
-
-// Connect to the database
+const { Phones, Makes, Platforms } = require('../models')
 
 
+const main = async () => {
     const phones = [
-        { model_id: '', 
+        {
         name: "iPhone 14 Pro", 
         generation: 14, 
         release_yr: 2023,
@@ -20,13 +19,18 @@ const { Phones } = require('../models')
         make_id: 
     }
        
-        
-
+    
 ]
-
-    await Phones.insertMany(movies)
-    console.log("Check these phones out!")
 }
+    await Phone.insertMany(phones)
+    console.log("Check these phones out!")
+    await Platform.insertMany(platforms)
+    console.log('platforms created')
+    await Make.insertMany(makes)
+    console.log('platforms created')
+
+
 const run = async () => {
     await main()
     db.close()
+}
