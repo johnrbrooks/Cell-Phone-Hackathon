@@ -3,7 +3,9 @@ const cors = require('cors')
 const PORT = process.env.PORT || 3001
 const db = require('./db')
 const app = express()
-const controllers = require('./controllers/phoneController')
+const phoneController = require('./controllers/phoneController')
+const platformController = require('./controllers/platformController')
+const makeController = require('./controllers/makeController')
 //const AppRouter = require('./Routes/AppRouter')
 
 const { Phone } = require('./models')
@@ -22,8 +24,11 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/phones', controllers.getPhones)
-app.get('/phones/:id', controllers.getPhonesById)
+
+app.get('/ios', platformController.getIosPhones)
+app.get('/phones', phoneController.getPhones)
+app.get('/phones/:id', phoneController.getPhonesById)
+app.get('/android', platformController.getAndroidPhones)
 
 
 //app.use('/', AppRouter)
