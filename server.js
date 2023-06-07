@@ -6,7 +6,7 @@ const app = express()
 const phoneController = require('./controllers/phoneController')
 const platformController = require('./controllers/platformController')
 const makeController = require('./controllers/makeController')
-//const AppRouter = require('./Routes/AppRouter')
+const AppRouter = require('./Routes/AppRouter')
 
 const { Phone } = require('./models')
 const { Make } = require('./models')
@@ -25,11 +25,11 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/ios', platformController.getIosPhones)
-app.get('/phones', phoneController.getPhones)
-app.get('/android', platformController.getAndroidPhones)
-app.get('/apple', makeController.getApplePhones)
-app.get('/google', makeController.getGooglePhones)
-app.get('/samsung', makeController.getSamsungPhones)
+// app.get('/ios', platformController.getIosPhones)
+// app.get('/phones', phoneController.getPhones)
+// app.get('/android', platformController.getAndroidPhones)
+// app.get('/apple', makeController.getApplePhones)
+// app.get('/google', makeController.getGooglePhones)
+// app.get('/samsung', makeController.getSamsungPhones)
 
-//app.use('/', AppRouter)
+app.use('/', AppRouter)
