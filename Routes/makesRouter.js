@@ -1,5 +1,5 @@
 const Router = require('express').Router()
-const controller = require('../controllers/makesController.js')
+const controller = require('../controllers/makeController.js')
 
 
 Router.get('/', controller.getMakes)

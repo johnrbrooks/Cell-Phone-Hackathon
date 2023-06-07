@@ -1,12 +1,12 @@
 const { Make } = require('../models')
 
 
-const getMake = async (req, res)=> {
+const getMakes = async (req, res)=> {
     const makes = await Makes.find({})
     res.json(makes)
 }
 
-const getMakeById = async (req,res) => {
+const getMakesById = async (req,res) => {
     try{
     const { id } = req.params
     const makes = await Makes.findById(id)
