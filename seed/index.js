@@ -4,26 +4,27 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
 
-const platforms = await Platform.find({})   
-const makes = await Make.find({})
-const phones = await Phone.find({})
+const platforms = await Platform.find()   
+const makes = await Make.find()
+const phones = await Phone.find()
+
 const Platforms = [
     { platform: 'iOS',
-      platform_id: platforms[0]._id
+     platform_id: platform._id
     },
     {
      platform: 'Android',
-     platform_id: platforms[0]._id
+     platform_id: platforms.[0]_id
     }
  ]
 const Makes = [
     {
         name:'Apple',
-        platform_id: platforms[0]._id
+       platform_id: platforms[0]._id
     },
     {
         name:'Google',
-        platform_id: platforms[0]._id
+       platform_id: platforms[0]._id
     },
     {
         name:'Samsung',
@@ -44,9 +45,9 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: "4.6",
         connector_type: "USB-C",
         camera_qual: "12MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+       platform_id: platforms[0]._id,
+       make_id: makes[0]._id,
         image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-126771/Apple-iPhone-14-Pro_FINAL_featured-image-packshot-review-1.jpg",
     },
 
@@ -61,7 +62,7 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: "4.5",
         connector_type: "USB-C",
         camera_qual: "12MP",
-        ext_storage: False,
+        ext_storage: false,
         platform_id: platforms[0]._id,
         make_id: makes[0]._id,
         image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-125834/Apple-iPhone-14_FINAL_featured-image-packshot-review.jpg",
@@ -239,12 +240,12 @@ await Platform.insertMany(platforms)
 console.log('platforms created')
 await Make.insertMany(makes)
 console.log('platforms created')
-
+}
 
 const run = async () => {
 await main()
 db.close()   
 } 
-}
+
 
 run()
