@@ -1,10 +1,12 @@
+let url = `https://localhost:3001`
+
 const iosButton = document.querySelector('#iosButton')
 const androidButton = document.querySelector('#androidButton')
 const appleButton = document.querySelector('#appleButton')
 const googleButton = document.querySelector('#googleButton')
 const samsungButton = document.querySelector('#samsungButton')
 
-let name = document.querySelector('#phoneName')
+// let name = document.querySelector('#phoneName')
 let rating = document.querySelector('#custRating')
 let generation = document.querySelector('#generation')
 let release = document.querySelector('#release')
@@ -30,6 +32,7 @@ androidButton.addEventListener('click', getAndroidPhones = async () => {
 
 const getApplePhones = async () => {
     console.log('Filtering Apple phones..')
+
 }
 
 const getGooglePhones = async () => {
@@ -39,3 +42,21 @@ const getGooglePhones = async () => {
 const getSamsungPhones = async () => {
     console.log('Filtering Samsung phones..')
 }
+
+
+// click 'apple' button -> show four apple phones
+// click 'google' button -> show four google phones
+// click 'samsung' button -> show four samsung phones
+
+function selectPlatform(phonePlatform, async () => {
+    if (phonePlatform === 'iOS') {
+        let name = document.querySelector('#phoneName')
+        name.innerHTML = ``
+    }
+
+}
+)
+
+// function to pull makes
+
+// function to pull phones
