@@ -1,13 +1,13 @@
-import { model } from 'mongoose'
-import makeSchema from './make'
-import phoneSchema from './phone'
-import platformSchema from './platform'
+const mongoose  = require('mongoose')
+const makeSchema = require('./make')
+const phoneSchema = require('./phone')
+const platformSchema = require('./platform')
 
-const Make = model('Make', makeSchema)
-const Phone = model('Phone', phoneSchema)
-const Platform = model('Platform', platformSchema)
+const Make = mongoose.model('Make', makeSchema)
+const Phone = mongoose.model('Phone', phoneSchema)
+const Platform = mongoose.model('Platform', platformSchema)
 
-export default {
+module.exports = {
   Make,
   Phone,
   Platform

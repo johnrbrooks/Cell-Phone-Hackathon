@@ -8,4 +8,4 @@ const platformSchema = new Schema(
     }
 )
 
-module.exports = Platform
+module.exports = platformSchema
