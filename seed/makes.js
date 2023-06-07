@@ -8,7 +8,7 @@ const main = async () => {
     const makes = [
         {
             name:'Apple',
-            platform_id: platforms[0]._id
+            platforms_id: platforms[0]._id
         },
         {
             name:'Google',
