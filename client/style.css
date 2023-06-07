@@ -6,10 +6,8 @@
 
 body {
     font-family: 'Maven Pro', sans-serif;
-    background-color: rgb(3, 3, 94);
+    /* background-color:rgb(143, 143, 255); */
     color: white;
-    width: 100%;
-    height: 100%;
 }
 
 .page-container {
@@ -78,7 +76,9 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
+    padding: 2.5rem 0;
+    background-color: rgb(3, 3, 94);
+    width: 100%;
 }
 
 .models {
@@ -108,9 +108,14 @@ nav {
     padding: 1rem;
 }
 
-footer {
+.footer-items-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color:rgb(143, 143, 255);
-    margin: 2rem 0;
+    color: rgb(3, 3, 94);
+    font-weight: 700;
     padding: 2rem 0;
 }
 
