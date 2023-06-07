@@ -1,6 +1,6 @@
 const express = require('express')
 const Router = require('express').Router()
-const platformsController = require('../controllers/platformsController.js')
+const platformsController = require('../controllers/platformController.js')
 
 
 
