@@ -69,8 +69,6 @@ const { Phones } = require('../models')
 
 ]
 
-    
-
 
 await Phone.insertMany(phones)
 console.log("Check these phones out!")
