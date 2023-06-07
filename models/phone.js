@@ -2,6 +2,7 @@ const { Schema } = require('mongoose')
 
 const phoneSchema = new Schema(
     {
+        image: {type: String, required: true },
         model_id: { type: String, required: true },
         name: { type: String, required: true },
         generation: { type: String, required: true },
