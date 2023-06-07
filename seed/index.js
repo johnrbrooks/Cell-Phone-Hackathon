@@ -1,3 +1,4 @@
+
 const db = require('../db')
 const { Phones } = require('../models')
 
@@ -75,4 +76,3 @@ const { Phones } = require('../models')
 const run = async () => {
     await main()
     db.close()
-}
