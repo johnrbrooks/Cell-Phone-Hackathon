@@ -15,8 +15,8 @@ const { Phones } = require('../models')
         connector_type: "USB-C",
         camera_qual: "12MP",
         ext_storage: False,
-        platform_id:
-        make_id: 
+        platform_id: platforms[0]._id,
+        make_id: makes[0]._id,
         image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-126771/Apple-iPhone-14-Pro_FINAL_featured-image-packshot-review-1.jpg",
     },
 
@@ -32,8 +32,8 @@ const { Phones } = require('../models')
         connector_type: "USB-C",
         camera_qual: "12MP",
         ext_storage: False,
-        platform_id:
-        make_id: 
+        platform_id: platforms[0]._id,
+        make_id: makes[0]._id,
         image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-125834/Apple-iPhone-14_FINAL_featured-image-packshot-review.jpg",
     },
 
@@ -48,8 +48,8 @@ const { Phones } = require('../models')
         connector_type: "USB-C",
         camera_qual: "12MP",
         ext_storage: False,
-        platform_id:
-        make_id: 
+        platform_id: platforms[0]._id,
+        make_id: makes[0]._id,
         image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg",
     },
 
@@ -64,8 +64,8 @@ const { Phones } = require('../models')
         connector_type: "USB-C",
         camera_qual: "12MP",
         ext_storage: False,
-        platform_id:
-        make_id: 
+        platform_id: platforms[0]._id,
+        make_id: makes[0]._id,
         image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-mini-01.jpg",
     },
        
