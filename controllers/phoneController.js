@@ -3,16 +3,16 @@ const phoneSchema = require('../models/phone')
 
 
 const getPhones = async (req, res)=> {
-    const cellphones = await phones.find()
+    const cellphones = await Phone.find()
     res.json(cellphones)
 }
 
 const getPhonesById = async (req,res) => {
     try{
     const { id } = req.params
-    const Phone = await phones.findById(id)
-    if(!Phone) throw Error('phones not found')
-    res.json(Phone)
+    const phoneById = await Phone.findById(id)
+    if(!phoneById) throw Error('phones not found')
+    res.json(phoneById)
     }catch (e){
         console.log(e)
         res.send('phones not found')
