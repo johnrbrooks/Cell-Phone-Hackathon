@@ -109,7 +109,7 @@ nav {
 }
 
 .add-phone-button-container {
-    background-color:rgb(78, 78, 190);
+    background-color:rgb(3, 3, 94);
     width: 100%;
     padding: 2rem 0;
     display: flex;
@@ -128,15 +128,42 @@ nav {
     transition: 0.4s;
 }
 
+.close-phone-button-container {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.close-phone-button, .submit-phone {
+    background-color:rgb(143, 143, 255);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
 .add-phone-button:hover {
     background-color:rgb(3, 3, 94);
     color: white;
     transform: translateY(-4px);
     cursor: pointer;
+    box-shadow: 0px 5px 7px 1px rgb(255, 255, 255);
+}
+
+.close-phone-button:hover, .submit-phone:hover {
+    background-color:rgb(3, 3, 94);
+    color: white;
+    transform: translateY(-2px);
+    cursor: pointer;
 }
 
 .add-phone-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;

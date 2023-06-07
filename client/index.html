@@ -109,49 +109,61 @@
             <form action="" class="add-phone-form">
                 <div class="form-item-container">
                     <label for="phoneName">Phone Name:</label>
-                    <input type="text" class="form-item" id="inputPhoneName">
+                    <input type="text" class="form-item" id="inputPhoneName" required>
                 </div>
                 <div class="form-item-container">
                     <label for="phoneImage">Phone Image (url):</label>
-                    <input type="text" class="form-item" id="inputPhoneImage">
+                    <input type="text" class="form-item" id="inputPhoneImage" required>
                 </div>
                 <div class="form-item-container">
                     <label for="custRating">Customer Rating: 1-5</label>
-                    <input type="text" class="form-item" id="inputCustRating">
+                    <input type="text" class="form-item" id="inputCustRating" required>
                 </div>
                 <div class="form-item-container">
                     <label for="generation">Generation:</label>
-                    <input type="text" class="form-item" id="inputGeneration">
+                    <input type="text" class="form-item" id="inputGeneration" required>
                 </div>
                 <div class="form-item-container">
                     <label for="release">Release Year:</label>
-                    <input type="text" class="form-item" id="inputRelease">
+                    <input type="text" class="form-item" id="inputRelease" required>
                 </div>
                 <div class="form-item-container">
                     <label for="price">Price (number): </label>
-                    <input type="text" class="form-item" id="inputPrice">
+                    <input type="text" class="form-item" id="inputPrice" required>
                 </div>
                 <div class="form-item-container">
                     <label for="storage">Storage:</label>
-                    <input type="text" class="form-item" id="inputStorage">
+                    <input type="text" class="form-item" id="inputStorage" required>
                 </div>
                 <div class="form-item-container">
                     <label for="screenSize">Screen Size:</label>
-                    <input type="text" class="form-item" id="inputScreenSize">
+                    <input type="text" class="form-item" id="inputScreenSize" required>
                 </div>
                 <div class="form-item-container">
                     <label for="inputConnector">Connector Type:</label>
-                    <input type="text" class="form-item" id="inputConnector">
+                    <input type="text" class="form-item" id="inputConnector" required>
                 </div>
                 <div class="form-item-container">
                     <label for="inputCameraQuality">Camera Quality:</label>
-                    <input type="text" class="form-item" id="inputcameraQuality">
+                    <input type="text" class="form-item" id="inputcameraQuality" required>
                 </div>
                 <div class="form-item-container">
                     <label for="externalStorage">External Storage (true or false): </label>
-                    <input type="text" class="form-item" id="externalStorage">
+                    <input type="text" class="form-item" id="externalStorage" required>
+                </div>
+                <div class="form-item-container">
+                    <label for="Platform">OS (iOS or Android): </label>
+                    <input type="text" class="form-item" id="externalStorage" required>
+                </div>
+                <div class="form-item-container">
+                    <label for="Make">Brand(Apple, Google, or Samsung): </label>
+                    <input type="text" class="form-item" id="externalStorage" required>
                 </div>
             </form>
+            <div class="close-phone-button-container" id="closePhoneButtonContainer">
+                <button class="submit-phone" id="submitPhone">Submit</button>
+                <button class="close-phone-button" id="closePhoneButton">Close</button>
+            </div>
         </div>
         <footer>
             <div class="footer-items-container">

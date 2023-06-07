@@ -48,15 +48,39 @@ const getSamsungPhones = async () => {
 // click 'google' button -> show four google phones
 // click 'samsung' button -> show four samsung phones
 
-function selectPlatform(phonePlatform, async () => {
-    if (phonePlatform === 'iOS') {
-        let name = document.querySelector('#phoneName')
-        name.innerHTML = ``
-    }
+// function selectPlatform(phonePlatform, async () => {
+//     if (phonePlatform === 'iOS') {
+//         let name = document.querySelector('#phoneName')
+//         name.innerHTML = ``
+//     }
 
-}
-)
+// })
 
 // function to pull makes
 
 // function to pull phones
+
+// function to add and close phone form
+
+const addPhoneForm = document.querySelector('#addPhoneButton')
+const addPhoneButtonContainer = document.querySelector('#addPhoneButtonContainer')
+const addPhoneContainer = document.querySelector('.add-phone-container')
+const closePhoneButtonContainer = document.querySelector('#closePhoneButtonContainer')
+const closePhoneButton = document.querySelector('#closePhoneButton')
+
+
+addPhoneForm.addEventListener('click', showForm)
+
+function showForm() {
+    addPhoneButtonContainer.style.display = 'none'
+    addPhoneContainer.style.display = 'flex'
+    closePhoneButton.addEventListener('click', closeForm)
+}
+
+function closeForm() {
+    addPhoneContainer.style.display = 'none'
+    addPhoneButtonContainer.style.display = 'flex'
+}
+
+//submit button does nothing right now.. will need routes to add functionality
+
