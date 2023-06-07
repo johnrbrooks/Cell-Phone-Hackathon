@@ -49,6 +49,7 @@ const getGooglePhones = async (req, res) => {
 
 module.exports = {
     getMakes,
+    getMakesById,
     getApplePhones,
     getSamsungPhones,
     getGooglePhones
