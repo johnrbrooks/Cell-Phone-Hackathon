@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Maven+Pro:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c9dab565ca.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
     <title>Cell Phone DB</title>
 </head>
@@ -21,16 +22,16 @@
             <div class="platform-selection">
                 <h3 class="platform-selection">Select a Platform</h3>
                 <div class="platform-buttons-container">
-                    <button class="selection-button">iOS</button>
-                    <button class="selection-button">Android</button>
+                    <button class="selection-button" id="iosButton">iOS</button>
+                    <button class="selection-button" id="androidButton">Android</button>
                 </div>
             </div>
             <div class="make-selection">
                 <h3 class="make-selection">Select a Make</h3>
                 <div class="make-buttons-container">
-                    <button class="selection-button">Apple</button>
-                    <button class="selection-button">Google</button>
-                    <button class="selection-button">Samsung</button>
+                    <button class="selection-button" id="appleButton">Apple</button>
+                    <button class="selection-button" id="googleButton">Google</button>
+                    <button class="selection-button" id="samsungButton">Samsung</button>
                 </div>
             </div>
         </div>
@@ -38,88 +39,88 @@
             <h1 class="models">Models</h1>
             <div class="item-grid">
                 <div class="grid-item">
-                    <img src="" class="grid-item-image" alt="">
+                    <img src="" class="grid-item-image" id="phoneImage" alt="">
                     <div class="grid-item-stats">
-                        <h3 class="grid-item-title">Name</h3>
-                        <p class="grid-item-info">Customer Rating:</p>
-                        <p class="grid-item-info">Generation:</p>
-                        <p class="grid-item-info">Release Year:</p>
-                        <p class="grid-item-info">Price:</p>
-                        <p class="grid-item-info">Storage:</p>
-                        <p class="grid-item-info">Screen Size:</p>
-                        <p class="grid-item-info">Connector Type:</p>
-                        <p class="grid-item-info">Camera Quality:</p>
-                        <p class="grid-item-info">External Storage:</p>
+                        <h3 class="grid-item-title" id="phoneName">Name</h3>
+                        <p class="grid-item-info" id="custRating">Customer Rating:</p>
+                        <p class="grid-item-info" id="generation">Generation:</p>
+                        <p class="grid-item-info" id="release">Release Year:</p>
+                        <p class="grid-item-info" id="price">Price:</p>
+                        <p class="grid-item-info" id="storage">Storage:</p>
+                        <p class="grid-item-info" id="screenSize">Screen Size:</p>
+                        <p class="grid-item-info" id="connector">Connector Type:</p>
+                        <p class="grid-item-info" id="cameraQuality">Camera Quality:</p>
+                        <p class="grid-item-info" id="externalStorage">External Storage:</p>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="" class="grid-item-image" alt="">
+                    <img src="" class="grid-item-image" id="phoneImage" alt="">
                     <div class="grid-item-stats">
-                        <h3 class="grid-item-title">Name</h3>
-                        <p class="grid-item-info">Customer Rating:</p>
-                        <p class="grid-item-info">Generation:</p>
-                        <p class="grid-item-info">Release Year:</p>
-                        <p class="grid-item-info">Price:</p>
-                        <p class="grid-item-info">Storage:</p>
-                        <p class="grid-item-info">Screen Size:</p>
-                        <p class="grid-item-info">Connector Type:</p>
-                        <p class="grid-item-info">Camera Quality:</p>
-                        <p class="grid-item-info">External Storage:</p>
+                        <h3 class="grid-item-title" id="phoneName">Name</h3>
+                        <p class="grid-item-info" id="custRating">Customer Rating:</p>
+                        <p class="grid-item-info" id="generation">Generation:</p>
+                        <p class="grid-item-info" id="release">Release Year:</p>
+                        <p class="grid-item-info" id="price">Price:</p>
+                        <p class="grid-item-info" id="storage">Storage:</p>
+                        <p class="grid-item-info" id="screenSize">Screen Size:</p>
+                        <p class="grid-item-info" id="connector">Connector Type:</p>
+                        <p class="grid-item-info" id="cameraQuality">Camera Quality:</p>
+                        <p class="grid-item-info" id="externalStorage">External Storage:</p>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="" class="grid-item-image" alt="">
+                    <img src="" class="grid-item-image" id="phoneImage" alt="">
                     <div class="grid-item-stats">
-                        <h3 class="grid-item-title">Name</h3>
-                        <p class="grid-item-info">Customer Rating:</p>
-                        <p class="grid-item-info">Generation:</p>
-                        <p class="grid-item-info">Release Year:</p>
-                        <p class="grid-item-info">Price:</p>
-                        <p class="grid-item-info">Storage:</p>
-                        <p class="grid-item-info">Screen Size:</p>
-                        <p class="grid-item-info">Connector Type:</p>
-                        <p class="grid-item-info">Camera Quality:</p>
-                        <p class="grid-item-info">External Storage:</p>
+                        <h3 class="grid-item-title" id="phoneName">Name</h3>
+                        <p class="grid-item-info" id="custRating">Customer Rating:</p>
+                        <p class="grid-item-info" id="generation">Generation:</p>
+                        <p class="grid-item-info" id="release">Release Year:</p>
+                        <p class="grid-item-info" id="price">Price:</p>
+                        <p class="grid-item-info" id="storage">Storage:</p>
+                        <p class="grid-item-info" id="screenSize">Screen Size:</p>
+                        <p class="grid-item-info" id="connector">Connector Type:</p>
+                        <p class="grid-item-info" id="cameraQuality">Camera Quality:</p>
+                        <p class="grid-item-info" id="externalStorage">External Storage:</p>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="" class="grid-item-image" alt="">
+                    <img src="" class="grid-item-image" id="phoneImage" alt="">
                     <div class="grid-item-stats">
-                        <h3 class="grid-item-title">Name</h3>
-                        <p class="grid-item-info">Customer Rating:</p>
-                        <p class="grid-item-info">Generation:</p>
-                        <p class="grid-item-info">Release Year:</p>
-                        <p class="grid-item-info">Price:</p>
-                        <p class="grid-item-info">Storage:</p>
-                        <p class="grid-item-info">Screen Size:</p>
-                        <p class="grid-item-info">Connector Type:</p>
-                        <p class="grid-item-info">Camera Quality:</p>
-                        <p class="grid-item-info">External Storage:</p>
+                        <h3 class="grid-item-title" id="phoneName">Name</h3>
+                        <p class="grid-item-info" id="custRating">Customer Rating:</p>
+                        <p class="grid-item-info" id="generation">Generation:</p>
+                        <p class="grid-item-info" id="release">Release Year:</p>
+                        <p class="grid-item-info" id="price">Price:</p>
+                        <p class="grid-item-info" id="storage">Storage:</p>
+                        <p class="grid-item-info" id="screenSize">Screen Size:</p>
+                        <p class="grid-item-info" id="connector">Connector Type:</p>
+                        <p class="grid-item-info" id="cameraQuality">Camera Quality:</p>
+                        <p class="grid-item-info" id="externalStorage">External Storage:</p>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="" class="grid-item-image" alt="">
+                    <img src="" class="grid-item-image" id="phoneImage" alt="">
                     <div class="grid-item-stats">
-                        <h3 class="grid-item-title">Name</h3>
-                        <p class="grid-item-info">Customer Rating:</p>
-                        <p class="grid-item-info">Generation:</p>
-                        <p class="grid-item-info">Release Year:</p>
-                        <p class="grid-item-info">Price:</p>
-                        <p class="grid-item-info">Storage:</p>
-                        <p class="grid-item-info">Screen Size:</p>
-                        <p class="grid-item-info">Connector Type:</p>
-                        <p class="grid-item-info">Camera Quality:</p>
-                        <p class="grid-item-info">External Storage:</p>
+                        <h3 class="grid-item-title" id="phoneName">Name</h3>
+                        <p class="grid-item-info" id="custRating">Customer Rating:</p>
+                        <p class="grid-item-info" id="generation">Generation:</p>
+                        <p class="grid-item-info" id="release">Release Year:</p>
+                        <p class="grid-item-info" id="price">Price:</p>
+                        <p class="grid-item-info" id="storage">Storage:</p>
+                        <p class="grid-item-info" id="screenSize">Screen Size:</p>
+                        <p class="grid-item-info" id="connector">Connector Type:</p>
+                        <p class="grid-item-info" id="cameraQuality">Camera Quality:</p>
+                        <p class="grid-item-info" id="externalStorage">External Storage:</p>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
             <div class="footer-items-container">
+                <a href="https://github.com/quark934/Cell-Phone-Hackathon"><i class="fa-brands fa-square-github fa-2xl" style="color: #03035e;"></i></a>
+                <p class="credits">Created by RR, JB, EH, LC</p>
             </div>
         </footer>
     </div>
-    
-
 </body>
 </html>
