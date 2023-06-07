@@ -1,4 +1,3 @@
-
 const db = require('../db')
 const { Phones } = require('../models')
 
@@ -70,9 +69,18 @@ const { Phones } = require('../models')
 
 ]
 
-    await Phones.insertMany(movies)
-    console.log("Check these phones out!")
+    
+
+
+await Phone.insertMany(phones)
+console.log("Check these phones out!")
+await Platform.insertMany(platforms)
+console.log('platforms created')
+await Make.insertMany(makes)
+console.log('platforms created')
+
 
 const run = async () => {
-    await main()
-    db.close()
+await main()
+db.close()   
+} 
