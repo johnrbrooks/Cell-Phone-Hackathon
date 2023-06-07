@@ -27,8 +27,9 @@ app.get('/', (req, res) => {
 
 app.get('/ios', platformController.getIosPhones)
 app.get('/phones', phoneController.getPhones)
-app.get('/phones/:id', phoneController.getPhonesById)
 app.get('/android', platformController.getAndroidPhones)
-
+app.get('/apple', makeController.getApplePhones)
+app.get('/google', makeController.getGooglePhones)
+app.get('/samsung', makeController.getSamsungPhones)
 
 //app.use('/', AppRouter)
