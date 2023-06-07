@@ -4,31 +4,29 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
 
-const platforms = await Platform.find()   
+const platform = await Platform.find()   
 const makes = await Make.find()
 const phones = await Phone.find()
 
 const Platforms = [
     { platform: 'iOS',
-     platform_id: platform._id
     },
     {
-     platform: 'Android',
-     platform_id: platforms.[0]_id
+     platform: 'Android',   
     }
  ]
 const Makes = [
     {
         name:'Apple',
-       platform_id: platforms[0]._id
+       platform_id: Platforms[0]._id
     },
     {
         name:'Google',
-       platform_id: platforms[0]._id
+       platform_id: Platforms[1]._id
     },
     {
         name:'Samsung',
-        platform_id: platforms[0]._id
+        platform_id: Platforms[1]._id
     },
 ]
 const appleOS = await Platform.find({ platform_name:  'iOS'})
@@ -46,8 +44,8 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         connector_type: "USB-C",
         camera_qual: "12MP",
         ext_storage: false,
-       platform_id: platforms[0]._id,
-       make_id: makes[0]._id,
+       platform_id: Platforms[0],
+       make_id: Makes[0],
         image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-126771/Apple-iPhone-14-Pro_FINAL_featured-image-packshot-review-1.jpg",
     },
 
@@ -63,8 +61,8 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         connector_type: "USB-C",
         camera_qual: "12MP",
         ext_storage: false,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        platform_id: Platforms[0],
+        make_id: Makes[0],
         image: "https://cdn.dxomark.com/wp-content/uploads/medias/post-125834/Apple-iPhone-14_FINAL_featured-image-packshot-review.jpg",
     },
 
@@ -78,9 +76,9 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: "4.8",
         connector_type: "USB-C",
         camera_qual: "12MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+        platform_id: Platforms[0],
+        make_id: Makes[0],
         image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg",
     },
 
@@ -94,9 +92,9 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: "5.0",
         connector_type: "USB-C",
         camera_qual: "12MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+        platform_id: Platforms[0],
+        make_id: Makes[0],
         image: "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-mini-01.jpg",
     },
        
@@ -111,8 +109,8 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         connector_type: 'USB-C',
         camera_qual: '200MP',
         ext_storage: false,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id, 
+        platform_id: Platforms[1],
+        make_id: Makes[2],
         image: `https://image-us.samsung.com/us/smartphones/galaxy-s23-ultra/images/gallery/lavender/01-DM3-Lavender-PDP-1600x1200.jpg?$product-details-jpg$`,
     },
     {
@@ -126,8 +124,8 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         connector_type: 'USB-C',
         camera_qual: '50MP',
         ext_storage: false,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id, 
+        platform_id: Platforms[1],
+        make_id: Makes[2],
         image: `https://image-us.samsung.com/us/smartphones/galaxy-s23/images/gallery/cream/dm2/01-DM2-Cream-PDP-1600x1200.jpg?$product-details-jpg$`,
     },
     {
@@ -141,8 +139,8 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         connector_type: 'USB-C',
         camera_qual: '50MP',
         ext_storage: false,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id, 
+        platform_id: Platforms[1],
+        make_id: Makes[2],
         image: `https://image-us.samsung.com/us/smartphones/galaxy-z-fold4/gallery-images/08042022/Gallery-Q4-Green-01-1600x1200.jpg?$product-details-jpg$`,
     },
     {
@@ -156,8 +154,8 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         connector_type: 'USB-C',
         camera_qual: '50MP',
         ext_storage: true,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id, 
+        platform_id: Platforms[1],
+        make_id: Makes[2],
         image: `https://image-us.samsung.com/SamsungUS/configurator/A54-01-black-Configurator-DT-800x600.jpg`,
     },
     {
@@ -170,9 +168,9 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: "4.3",
         connector_type: "USB-C",
         camera_qual: "50MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+        platform_id: Platforms[1],
+        make_id: Makes[1],
         image: `https://multimedia.bbycastatic.ca/multimedia/products/500x500/166/16609/16609842.jpg`,
     },
     {
@@ -185,9 +183,9 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: "4.4",
         connector_type: "USB-C",
         camera_qual: "12.2MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+        platform_id: Platforms[1],
+        make_id: Makes[1],
         image: "https://multimedia.bbycastatic.ca/multimedia/products/500x500/162/16299/16299237.jpg"
     },
     {
@@ -200,9 +198,9 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: `5`,
         connector_type: "USB-C",
         camera_qual: "12.2MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+        platform_id: Platforms[1],
+        make_id: Makes[1],
         image: "https://multimedia.bbycastatic.ca/multimedia/products/500x500/152/15222/15222471.jpg"
     },
     {
@@ -216,30 +214,30 @@ const appleOS = await Platform.find({ platform_name:  'iOS'})
         cx_rating: `4.4`,
         connector_type: "USB-C",
         camera_qual: "12.2MP",
-        ext_storage: False,
-        platform_id: platforms[0]._id,
-        make_id: makes[0]._id,
+        ext_storage: false,
+        platform_id: Platforms[1],
+        make_id: Makes[1],
         image: "https://multimedia.bbycastatic.ca/multimedia/products/500x500/146/14640/14640262.jpg"
  
     },
 
 ]
 
-await Phone.deleteMany(phones)
-console.log("Check these phones out!")
-await Platform.deleteMany(platforms)
-console.log('platforms deleted')
-await Make.deleteMany(makes)
-console.log('platforms deleted')
+// await Phone.deleteMany(phones)
+// console.log("Check these phones out!")
+// await Platform.deleteMany(platform)
+// console.log('platform deleted')
+// await Make.deleteMany(makes)
+// console.log('platform deleted')
 
 
 
 await Phone.insertMany(phones)
 console.log("Check these phones out!")
-await Platform.insertMany(platforms)
-console.log('platforms created')
+await Platform.insertMany(platform)
+console.log('platform created')
 await Make.insertMany(makes)
-console.log('platforms created')
+console.log('make created')
 }
 
 const run = async () => {
