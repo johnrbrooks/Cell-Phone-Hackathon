@@ -21,28 +21,33 @@ const createPhone = async (req, res) => {
 
 const updatePhone = async (req, res) => {
     try {
-        const phone = await new Phone(req.body)
-        await phone.save()
-        return res.status(201).json({
-            phone,
-        });
+        const { id } = req.params;
+        await Phone.findOneAndUpdate(id, req.body, { new: true }, (err, phone) => {
+            if (err) {
+                res.status(500).send(err);
+            }
+            if (!phone) {
+                res.status(500).send('Phone not found!');
+            }
+            return res.status(200).json(phone);
+        })
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        return res.status(500).send(error.message);
     }
 }
 
 const deletePhone = async (req, res) => {
     try {
-        const phone = await new Phone(req.body)
-        await phone.save()
-        return res.status(201).json({
-            phone,
-        });
+        const { id } = req.params;
+        const deleted = await Plant.findByIdAndDelete(id)
+        if (deleted) {
+            return res.status(200).send("Phone deleted");
+        }
+        throw new Error("Phone not found");
     } catch (error) {
-        return res.status(500).json({ error: error.message })
+        return res.status(500).send(error.message);
     }
 }
-
 
 const getPhonesById = async (req,res) => {
     try{
@@ -61,5 +66,7 @@ const getPhonesById = async (req,res) => {
 
 module.exports = {
     getPhones,
-    getPhonesById
+    getPhonesById,
+    updatePhone
+
 }
