@@ -6,6 +6,50 @@ const getPlatforms = async (req, res)=> {
     res.json(platforms)
 }
 
+const createPlatforms = async (req, res) => {
+    try {
+        const Platform = await new Platform(req.body)
+        await platform.save()
+        return res.status(201).json({
+            platform,
+        });
+    } catch (error) {
+        return res.status(500).json({ error: error.message })
+    }
+}
+
+const updatePlatform = async (req, res) => {
+    try {
+        const { id } = req.params;
+        await Platform.findByIdAndUpdate(id, req.body, { new: true }, (err, platform) => {
+            if (err) {
+                res.status(500).send(err);
+            }
+            if (!make) {
+                res.status(500).send('Platform not found!');
+            }
+            return res.status(200).json(make);
+        })
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+const deletePlatform = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deleted = await Platform.findByIdAndDelete(id)
+        if (deleted) {
+            return res.status(200).send("Platform deleted");
+        }
+        throw new Error("Platform not found");
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+
+
 const getPlatformsById = async (req,res) => {
     try{
     const { id } = req.params

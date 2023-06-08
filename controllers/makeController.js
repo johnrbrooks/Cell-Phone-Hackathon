@@ -5,6 +5,48 @@ const getMakes = async (req, res)=> {
     res.json(makes)
 }
 
+const createMakes = async (req, res) => {
+    try {
+        const make = await new Make(req.body)
+        await make.save()
+        return res.status(201).json({
+            make,
+        });
+    } catch (error) {
+        return res.status(500).json({ error: error.message })
+    }
+}
+
+const updateMakes = async (req, res) => {
+    try {
+        const { id } = req.params;
+        await Make.findByIdAndUpdate(id, req.body, { new: true }, (err, make) => {
+            if (err) {
+                res.status(500).send(err);
+            }
+            if (!make) {
+                res.status(500).send('Make not found!');
+            }
+            return res.status(200).json(make);
+        })
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
+const deleteMake = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deleted = await Make.findByIdAndDelete(id)
+        if (deleted) {
+            return res.status(200).send("Make deleted");
+        }
+        throw new Error("Make not found");
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 const getMakesById = async (req,res) => {
     try{
     const { id } = req.params
