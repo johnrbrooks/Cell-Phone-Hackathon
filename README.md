@@ -1,83 +1,11 @@
-# Cell-Phone-Hackathon
+Cell Phone Hackathon
 
-# FIGMA ERD
-[Figma ERD](https://www.figma.com/file/s6l3H5archAJB5sohCyzUd/Cell-Phone-Hackathon?type=whiteboard&node-id=0%3A1&t=d2IDmtFsCW3UWIgf-1)
+This was a two-day sprint in implementing full-stack methods to quickly design a functional e-com website. We populated a mongoDB database with cell phone models, and used Mongoose/Express to work with our data, functionally creating our own API for the cell phones. We connected to our font end with DOM manipulation and used axios calls.
 
-![Hackathon](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.usdigitalpartners.com%2Fwp-content%2Fuploads%2Fhackathon.gif&f=1&nofb=1)
+In our first GA group project, we communicated to fairly delegate tasks and to keep ourselves organized while working to everybody's strengths. Hurdles arose with some GitHub pushes and pulls, and of course with Mongoose debugging, but we effectively were able to work through everything without any major issues.
 
-## Overview
-
-In this group project, you will have 2 days to create a **Mock E Commerce** Full Stack Application. This will include a **Frontend with DOM Manipulation**, a **MongoDB database**, and a **Mongoose/Express backend**. How you distribute the work within your group will be up to you. By the end of the hackathon, you will be expected to have a _working_  and _reasonably styled_ app. 
+The learning curve and time constraint was challenging, but satisfying. We submitted the project prooud of what we acccomplished and learned. With more time, we would have liked to add user functionality and full CRUD capabilities, as well as more DRY code.
 
 
-Your website should allow users to interact with its pages, make _requests_ (buttons, HTML forms, dropdowns, searchbars, etc.) to your backend, and *display the data* (text, images, etc.) in a meaningful way. Try to think about building an application that will create an engaging user experience.
-
-You will be building this app in **ONE** github repo which your group will be sharing. 
-
-Your group will be assigned a department to base your shop around, you will have to decide how you want to shape your data and what you want your models to contain. 
-
-Have fun!
-
-## Instructions
-
-- Choose a team git boss to handle pull requests from team members
-- Build your own API with:
-  - A MongoDB database connected to mongoose
-  - Mongoose schemas and models
-  - Server Middleware
-  - Routes and Controllers
-- Build a Frontend with HTML, CSS, and JS within a `client` directory _inside_ the main project directory:
-
-  ```sh
-  touch index.html style.css script.js
-  ```
-
-
-- Style your App professionally
-- Connect them with `axios` in the App. Your server's base URL should look something like this in development http://localhost:3001/api/
-  ```js
-  const BASE_URL = 'http://localhost:3001/'
-  // When using the BASE_URL
-  axios.get(`${BASE_URL}/someroute`)
-  ```
-
-## Requirements
-
-- At least 2 routes on your back end with both Index and Show end points
-- Get (Read) functionality through Axios
-- At least 2 different forms of user interactivity to pull and render information from your backend to your front end
-- 4 CRUD routes attached to one model on back end
-- At least 1 addition CUD functionality (Create, Update, Delete) attached to 1 model on Front End
-- Minimum of 5 Git Commits from each group member
-- Connected Mongoose/Express backend
-- Working frontend
-- Reasonably styled
-
----
-
-### **FINAL PRODUCT DUE: Thursday, June 8th at 11:00am EST (complete or not)**
-
----
-
-
-
-The folder structure should look like this:
-
-```
-.
-├── client
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── controllers
-|   ├── Controller1.js
-|   └── Controller2.js
-├── db
-|   └── index.js
-├── models
-|   ├── Model1.js
-|   ├── Model2.js
-|   └── index.js
-├── package.json
-└── server.js
-```
+ERD:
+https://www.figma.com/file/s6l3H5archAJB5sohCyzUd/Cell-Phone-Hackathon?type=whiteboard&node-id=0%3A1&t=S1oKM3i5aejgSf69-1
