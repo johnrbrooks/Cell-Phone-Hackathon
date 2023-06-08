@@ -7,5 +7,4 @@ In our first GA group project, we communicated to fairly delegate tasks and to k
 The learning curve and time constraint was challenging, but satisfying. We submitted the project and are proud of what we acccomplished and learned. With more time, we would have liked to add user functionality and full CRUD capabilities, as well as more DRY code.
 
 
-ERD:
 [ERD](https://www.figma.com/file/s6l3H5archAJB5sohCyzUd/Cell-Phone-Hackathon?type=whiteboard&node-id=0%3A1&t=S1oKM3i5aejgSf69-1)
