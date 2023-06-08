@@ -6,7 +6,7 @@ const appleButton = document.querySelector('#appleButton')
 const googleButton = document.querySelector('#googleButton')
 const samsungButton = document.querySelector('#samsungButton')
 
-// let name = document.querySelector('#phoneName')
+let name = document.querySelector('#phoneName')
 let rating = document.querySelector('#custRating')
 let generation = document.querySelector('#generation')
 let release = document.querySelector('#release')
@@ -21,6 +21,9 @@ iosButton.addEventListener('click', getIosPhones = async () => {
     appleButton.addEventListener('click', getApplePhones)
     googleButton.addEventListener('click', getGooglePhones)
     samsungButton.addEventListener('click', getSamsungPhones)
+
+    const pullIosPhones = await axios.get('http://localhost:3001/ios/apple')
+    console.log(pullIosPhones)
 })
 
 androidButton.addEventListener('click', getAndroidPhones = async () => {
@@ -28,19 +31,29 @@ androidButton.addEventListener('click', getAndroidPhones = async () => {
     appleButton.addEventListener('click', getApplePhones)
     googleButton.addEventListener('click', getGooglePhones)
     samsungButton.addEventListener('click', getSamsungPhones)
+
+    const pullSamnsungPhones = await axios.get('http://localhost:3001/android/samsung')
+    console.log(pullSamnsungPhones)
+    const pullGooglePhones = await axios.get('http://localhost:3001/android/google')
+    console.log(pullGooglePhones)
 })
 
 const getApplePhones = async () => {
     console.log('Filtering Apple phones..')
-
+    const pullIosPhones = await axios.get('http://localhost:3001/ios/apple')
+    console.log(pullIosPhones)
 }
 
 const getGooglePhones = async () => {
     console.log('Filtering Google phones..')
+    const pullGooglePhones = await axios.get('http://localhost:3001/android/google')
+    console.log(pullGooglePhones)
 }
 
 const getSamsungPhones = async () => {
     console.log('Filtering Samsung phones..')
+    const pullSamnsungPhones = await axios.get('http://localhost:3001/android/samsung')
+    console.log(pullSamnsungPhones)
 }
 
 
