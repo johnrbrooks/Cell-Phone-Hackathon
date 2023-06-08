@@ -9,4 +9,6 @@ The learning curve and time constraint was challenging, but satisfying. We submi
 
 [ERD](https://www.figma.com/file/s6l3H5archAJB5sohCyzUd/Cell-Phone-Hackathon?type=whiteboard&node-id=0%3A1&t=S1oKM3i5aejgSf69-1)
 
+![Photo of an overexcited, hyper Penny.](https://i.imgur.com/nvfMRhL.png)
+
 ![A happy dog lying on a sofa](https://photos.app.goo.gl/DSdSuGVkQ2NmRJr67)
