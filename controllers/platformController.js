@@ -21,7 +21,7 @@ const createPlatforms = async (req, res) => {
 const updatePlatform = async (req, res) => {
     try {
         const { id } = req.params;
-        await Platform.findByIdAndUpdate(id, req.body, { new: true }, (err, platform) => {
+        await Platform.findByIdAndUpdate({id:id}, req.body, (err, platform) => {
             if (err) {
                 res.status(500).send(err);
             }

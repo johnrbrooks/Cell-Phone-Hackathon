@@ -22,7 +22,7 @@ const createPhone = async (req, res) => {
 const updatePhone = async (req, res) => {
     try {
         const { id } = req.params;
-        await Phone.findOneAndUpdate(id, req.body, { new: true }, (err, phone) => {
+        await Phone.updateOne(id, req.body, { new: true }, (err, phone) => {
             if (err) {
                 res.status(500).send(err);
             }
