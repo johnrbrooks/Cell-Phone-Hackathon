@@ -11,4 +11,4 @@ The learning curve and time constraint was challenging, but satisfying. We submi
 
 ![Photo of an overexcited, hyper Penny.](https://i.imgur.com/nvfMRhL.png)
 
-![A happy dog lying on a sofa](https://photos.app.goo.gl/DSdSuGVkQ2NmRJr67)
+![A happy dog lying on a sofa](https://imgur.com/a/z8Q47Vn)
